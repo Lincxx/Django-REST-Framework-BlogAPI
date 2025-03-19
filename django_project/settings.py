@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 3rd party
     "rest_framework",
+    "corsheaders",
     # Local
     'accounts',
     'posts'
@@ -135,3 +136,8 @@ REST_FRAMEWORK = {
         "rest_framework.permissions.AllowAny",
     ],
 }
+
+CORS_ALLOWED_ORIGINS = (  
+    "http://localhost:3000",
+    "http://localhost:8000",
+)
